@@ -1,0 +1,17 @@
+<resources>
+<string name="app_name">Percentage Calculator</string>
+<string name="activity_1_instruction">What percentage is one number out of another number</string>
+<string name="Number">Number</string>
+<string name="Num1">Num 1</string>
+<string name="Num2">Num 2</string>
+<string name="OutOf">Out of</string>
+<string name="Represents">Represents</string>
+<string name="Percent">Percent</string>
+<string name="Mail">denisanicai14@gmail.com</string>
+<string name="navigation_draw_open">Open Navigation Drawer</string>
+<string name="navigation_draw_close">Close Navigation Drawer</string>
+<string name="app_title">Percentage Calculator</string>
+<string name="activity_2_instruction">How much does a percentage out of a number represent</string>
+<string name="Result">Result</string>
+<string name="Is">Is</string>
+</resources>

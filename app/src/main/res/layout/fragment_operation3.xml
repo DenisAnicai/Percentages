@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="top">
+
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/back"
+        android:gravity="center"
+        android:text="The number calculated from multiple numbers representing specific percentages"
+        android:textColor="@color/black"
+        android:textSize="30sp" />
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="4dp">
+
+        <LinearLayout
+            android:id="@+id/Row1"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/MainNumber"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@drawable/back"
+                android:gravity="center"
+                android:hint="Number 1"
+                android:inputType="numberDecimal"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView9"
+                style="@style/ShadowText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/Is"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/MainPercent"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="@drawable/back"
+                android:gravity="center"
+                android:hint="@string/Percent"
+                android:inputType="numberDecimal"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView10"
+                style="@style/ShadowText"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.7"
+                android:gravity="center"
+                android:text="%"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="4dp">
+
+        <Button
+            android:id="@+id/delete2"
+            style="@style/ShadowText"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/ic_cancel_red_24dp" />
+
+        <LinearLayout
+            android:layout_below="@+id/delete2"
+            android:id="@+id/Row2"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/Number"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@drawable/back"
+                android:gravity="center"
+                android:hint="Number 2"
+                android:inputType="numberDecimal"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView11"
+                style="@style/ShadowText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/Is"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/Percent"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="@drawable/back"
+                android:gravity="center"
+                android:hint="@string/Percent"
+                android:inputType="numberDecimal"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView12"
+                style="@style/ShadowText"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.7"
+                android:gravity="center"
+                android:text="%"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/addNumber"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@color/colorPrimaryDark"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:text="Add Number"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/Result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/back"
+        android:gravity="center"
+        android:layout_marginBottom="50dp"
+        android:padding="6dp"
+        android:text="@string/Result"
+        android:textSize="30sp" />
+
+
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <item android:title="Operations">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/operation1"
+
+                    android:title="A is what % out of B" />
+                <item
+                    android:id="@+id/operation2"
+                    android:title="X % out of A = ?" />
+                <item
+                    android:id="@+id/operation3"
+                    android:title="X1 (is x1%) + ... Xn (is xn%) = A" />
+                <item
+                    android:id="@+id/operation4"
+                    android:title="A compared to B in percentage" />
+            </group>
+        </menu>
+    </item>
+</menu>
