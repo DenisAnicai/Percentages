@@ -68,29 +68,26 @@ public class Operation3Fragment extends Fragment {
 
                                     for (int i = 0; i < z; i++) {
                                         row[i].setTag(i);
-                                        ((EditText)(row[i].getChildAt(0))).setHint("Number " + (i + 1));
+                                        ((EditText) (row[i].getChildAt(0))).setHint("Number " + (i + 1));
                                         String x = ((EditText) row[i].getChildAt(0)).getText().toString();
                                         String y = ((EditText) row[i].getChildAt(2)).getText().toString();
                                         if (!isEmptyString(x) && !isEmptyString(y)) {
                                             PercentSum += Float.valueOf(y);
                                             Result += Float.valueOf(x) * (Float.valueOf(y) / 100);
-                                        }
-                                        else
-                                        {
+                                        } else {
                                             OK = false;
                                         }
                                     }
-                                    if(PercentSum <= 100){
+                                    if (PercentSum <= 100) {
                                         OnceItWasOk = true;
                                     }
-                                    if(PercentSum > 100 && OnceItWasOk) {
+                                    if (PercentSum > 100 && OnceItWasOk) {
                                         OnceItWasOk = false;
                                         Toast.makeText(getActivity(), "The sum of the percentages is over 100% !",
                                                 Toast.LENGTH_LONG).show();
                                     }
 
-                                    if(OK)
-                                    {
+                                    if (OK) {
                                         DecimalFormat df = new DecimalFormat("#.####");
                                         df.setRoundingMode(RoundingMode.CEILING);
                                         result.setText(String.valueOf(df.format(Result)));
@@ -134,12 +131,11 @@ public class Operation3Fragment extends Fragment {
         @Override
         public void onClick(View v) {
             View parent = (View) v.getParent();
-            LinearLayout x = (LinearLayout)((RelativeLayout)parent).getChildAt(1);
-            for(int i=0;i<z;i++){
-                if(row[i].getTag() == x.getTag())
-                {
-                    for(int j=i;j<z-1;j++)
-                        row[j] = row[j+1];
+            LinearLayout x = (LinearLayout) ((RelativeLayout) parent).getChildAt(1);
+            for (int i = 0; i < z; i++) {
+                if (row[i].getTag() == x.getTag()) {
+                    for (int j = i; j < z - 1; j++)
+                        row[j] = row[j + 1];
                     z--;
                     break;
                 }

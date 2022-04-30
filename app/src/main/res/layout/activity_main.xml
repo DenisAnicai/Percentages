@@ -6,8 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context=".MainActivity"
-    >
+    tools:context=".MainActivity">
 
 
     <LinearLayout
@@ -36,7 +35,6 @@
         </android.support.v4.widget.NestedScrollView>
 
 
-
     </LinearLayout>
 
     <android.support.design.widget.NavigationView
@@ -47,8 +45,7 @@
         app:theme="@style/NavigationDrawerStyle"
         app:headerLayout="@layout/nav_header"
         app:menu="@menu/drawer_menu"
-        app:itemTextColor="@color/drawer_item"
-        />
+        app:itemTextColor="@color/drawer_item" />
 
 </android.support.v4.widget.DrawerLayout>
 
